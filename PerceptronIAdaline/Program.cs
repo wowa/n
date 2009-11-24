@@ -6,10 +6,10 @@ using System.IO;
 
 namespace PerceptronIAdaline
 {
-    using Model2.Implementation;
-    using Model2.Learning.Supervised.Bipolar;
-    using Model2.Learning.Supervised;
-    using Model2.Interfaces;
+    using Model.Implementation;
+    using Model.Learning.Supervised.Bipolar;
+    using Model.Learning.Supervised;
+    using Model.Interfaces;
     class Program
     {
 

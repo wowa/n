@@ -10,8 +10,8 @@ using System.Windows.Forms;
 
 namespace PerceptronIAdaline
 {
-    using Model2.Interfaces;
-    using Model2.Implementation;
+    using Model.Interfaces;
+    using Model.Implementation;
     public partial class Form1 : Form
     {
         public Form1()
@@ -145,9 +145,9 @@ namespace PerceptronIAdaline
         {
  
             if (isAdaline)
-                learningMethod = new Model2.Learning.Supervised.AdalineLMSLearningMethod();
+                learningMethod = new Model.Learning.Supervised.AdalineLMSLearningMethod();
             else
-                learningMethod = new Model2.Learning.Supervised.Bipolar.PerceptronLearningMethod();
+                learningMethod = new Model.Learning.Supervised.Bipolar.PerceptronLearningMethod();
             learningMethod.Alpha = alpha;
 
             learningMethod.Learn(net, learningSequence);
@@ -268,7 +268,7 @@ namespace PerceptronIAdaline
             if (learningMethod != null && learningMethod.LearningStory != null
                 && learningMethod.LearningStory.Count > 0)
             {
-                Model2.Learning.NeuronState state = learningMethod.LearningStory[(int)numericUpDown1.Value];
+                Model.Learning.NeuronState state = learningMethod.LearningStory[(int)numericUpDown1.Value];
                 if (state.Inputs != null && state.Weights != null && state.Weights.Length == state.Inputs.Length)
                 {
                     textBox3.Text = "Output: " + state.Output;

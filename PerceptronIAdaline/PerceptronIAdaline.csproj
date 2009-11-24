@@ -60,31 +60,31 @@
     <Compile Include="LabeledTextBox.Designer.cs">
       <DependentUpon>LabeledTextBox.cs</DependentUpon>
     </Compile>
-    <Compile Include="Model2\Implementation\InputLayer.cs" />
-    <Compile Include="Model2\Implementation\Layer.cs" />
-    <Compile Include="Model2\Implementation\LearningSequence.cs" />
-    <Compile Include="Model2\Implementation\LearningVector.cs" />
-    <Compile Include="Model2\Implementation\NeuralConnection.cs" />
-    <Compile Include="Model2\Implementation\NeuralNetwork.cs" />
-    <Compile Include="Model2\Implementation\Neuron.cs" />
-    <Compile Include="Model2\Implementation\SupervisedLearningVector.cs" />
-    <Compile Include="Model2\Interfaces\IInputLayer.cs" />
-    <Compile Include="Model2\Interfaces\ILearningMethod.cs" />
-    <Compile Include="Model2\Interfaces\ILearningSequence.cs" />
-    <Compile Include="Model2\Interfaces\ILearningVector.cs" />
-    <Compile Include="Model2\Interfaces\INeuralNetwork.cs" />
-    <Compile Include="Model2\Interfaces\ILayer.cs" />
-    <Compile Include="Model2\Interfaces\INeuralConnection.cs" />
-    <Compile Include="Model2\Interfaces\INeuron.cs" />
-    <Compile Include="Model2\Interfaces\ISupervisedLearningMethod.cs" />
-    <Compile Include="Model2\Interfaces\ISupervisedLearningVector.cs" />
-    <Compile Include="Model2\Interfaces\Pure\IAxon.cs" />
-    <Compile Include="Model2\Interfaces\Pure\IDendrite.cs" />
-    <Compile Include="Model2\Interfaces\Pure\ISoma.cs" />
-    <Compile Include="Model2\Interfaces\Pure\ISynapse.cs" />
-    <Compile Include="Model2\Learning\NeuronState.cs" />
-    <Compile Include="Model2\Learning\Supervised\AdalineLMSLearningMethod.cs" />
-    <Compile Include="Model2\Learning\Supervised\Bipolar\PerceptronLearningMethod.cs" />
+    <Compile Include="Model\Implementation\InputLayer.cs" />
+    <Compile Include="Model\Implementation\Layer.cs" />
+    <Compile Include="Model\Implementation\LearningSequence.cs" />
+    <Compile Include="Model\Implementation\LearningVector.cs" />
+    <Compile Include="Model\Implementation\NeuralConnection.cs" />
+    <Compile Include="Model\Implementation\NeuralNetwork.cs" />
+    <Compile Include="Model\Implementation\Neuron.cs" />
+    <Compile Include="Model\Implementation\SupervisedLearningVector.cs" />
+    <Compile Include="Model\Interfaces\IInputLayer.cs" />
+    <Compile Include="Model\Interfaces\ILearningMethod.cs" />
+    <Compile Include="Model\Interfaces\ILearningSequence.cs" />
+    <Compile Include="Model\Interfaces\ILearningVector.cs" />
+    <Compile Include="Model\Interfaces\INeuralNetwork.cs" />
+    <Compile Include="Model\Interfaces\ILayer.cs" />
+    <Compile Include="Model\Interfaces\INeuralConnection.cs" />
+    <Compile Include="Model\Interfaces\INeuron.cs" />
+    <Compile Include="Model\Interfaces\ISupervisedLearningMethod.cs" />
+    <Compile Include="Model\Interfaces\ISupervisedLearningVector.cs" />
+    <Compile Include="Model\Interfaces\Pure\IAxon.cs" />
+    <Compile Include="Model\Interfaces\Pure\IDendrite.cs" />
+    <Compile Include="Model\Interfaces\Pure\ISoma.cs" />
+    <Compile Include="Model\Interfaces\Pure\ISynapse.cs" />
+    <Compile Include="Model\Learning\NeuronState.cs" />
+    <Compile Include="Model\Learning\Supervised\AdalineLMSLearningMethod.cs" />
+    <Compile Include="Model\Learning\Supervised\Bipolar\PerceptronLearningMethod.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -102,7 +102,7 @@
     <None Include="Properties\DataSources\ExampelDlaDGV2.datasource" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Model2\Learning\Supervised\Unipolar\" />
+    <Folder Include="Model\Learning\Supervised\Unipolar\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
